@@ -3,7 +3,6 @@ import {Routes, Route} from 'react-router-dom'
 import Home from './Pages/Home';
 import ChatPage from './Pages/ChatPage';
 import { ModeState } from './Context/ModeProvider';
-import Footer from './components/Footer';
 
 function App() {
   const {mode} = ModeState();
@@ -14,7 +13,6 @@ function App() {
       <Route path='/' element={<Home/>} />
       <Route path='/chats' element={<ChatPage/>} />
       </Routes>
-      <Footer/>
     </div>
   );
 }
