@@ -3,9 +3,7 @@
 
 
 .App {
-  height: auto;
-  background-size: cover;
-  background-position: center;
+  height: 100%;
 }
 
 ::-webkit-scrollbar{
