@@ -46,8 +46,6 @@ const Home = () => {
             width={"150px"}
             style={{ margin: "auto" }}
           />
-            Chatify
-          </Text>
         </Box>
         <Box bg={"white"} w="100%" p={4} borderRadius={"lg"} color={"black"}>
           <Tabs variant="soft-rounded">
