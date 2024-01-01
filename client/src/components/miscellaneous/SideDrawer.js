@@ -32,12 +32,14 @@ import ChatLoading from "../ChatLoading";
 import UserListItem from "../UserAvatar/UserListItem";
 import { getSender } from "../../config/ChatLogics";
 import { ModeState } from "../../Context/ModeProvider";
+import chatifyLogo from "./Chatify.png";
 
 const SideDrawer = () => {
   const [search, setSearch] = useState();
   const [searchResult, setSearchResult] = useState([]);
   const [loading, setLoading] = useState();
   const [loadingChat, setLoadingChat] = useState(false);
+  
 
   let history = useNavigate();
   const {
@@ -153,9 +155,12 @@ const SideDrawer = () => {
             </Text>
           </Button>
         </Tooltip>
-        <Text fontSize={"3xl"} fontFamily={"Verdana"}>
-          Chatify
-        </Text>
+        <Image
+            src={chatifyLogo}
+            alt="Chatify Logo"
+            width={"150px"}
+            style={{ margin: "auto" }}
+          />
         <div>
           <Menu>
             <MenuList
