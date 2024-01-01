@@ -13,6 +13,7 @@ import Login from "../components/Authentication/Login";
 import Singup from "../components/Authentication/Singup";
 import { useNavigate } from "react-router-dom";
 import { ModeState } from "../Context/ModeProvider";
+import chatifyLogo from "./Chatify.png";
 
 const Home = () => {
   let history = useNavigate();
@@ -39,13 +40,12 @@ const Home = () => {
           m="40px 0 15px 0"
           borderRadius={"lg"}
           borderWidth={"1px"}>
-          <Text
-            fontSize={"50px"}
-            fontFamily={"Poppins"}
-            color={"black"}
-            textAlign={"center"} // Aligns text horizontally to the center
-            marginX={"auto"} // Centers text using auto margin on both sides
-          >
+          <Image
+            src={chatifyLogo}
+            alt="Chatify Logo"
+            width={"150px"}
+            style={{ margin: "auto" }}
+          />
             Chatify
           </Text>
         </Box>
