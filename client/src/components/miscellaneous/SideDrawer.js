@@ -10,6 +10,7 @@ import {
   DrawerOverlay,
   FormControl,
   FormLabel,
+  Image,
   Input,
   Menu,
   MenuButton,
