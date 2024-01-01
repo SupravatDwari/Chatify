@@ -8,7 +8,7 @@ function App() {
   const {mode} = ModeState();
 
   return (
-    <div className="App" style={{backgroundImage: mode=='light'?'url(' + require('./bg.jpg') + ')': 'url(' + require('./dark-bg.jpg') + ')',backgroundAttachment: "fixed",}}>
+    <div className="App" style={{backgroundColor: mode === "light" ? "#AFEEEE" : "#696969",}}>
       <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/chats' element={<ChatPage/>} />
