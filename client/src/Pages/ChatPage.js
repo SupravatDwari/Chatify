@@ -12,7 +12,7 @@ const ChatPage = () => {
   const { setPosition } = ModeState();
   useEffect(() => {
     setPosition("relative");
-  }, []);
+  }, []);//chatpage
 
   return (
     <div style={{ width: "100%" }}>
